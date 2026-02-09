@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html class="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PROTOFOLIO</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="media/logo_png.png">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+            integrity="sha512-p1A9B6...etc..." crossorigin="anonymous"
+            referrerpolicy="no-referrer" />
+
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <div class="btns">
+                    <button title="العربية" class="switch-lang"
+                        id="switch-lang"><img
+                            src="media/assets/arab.svg"></button>
+                    <button class="switch-mode" id="switch-mode"><i
+                            class="fa-solid fa-sun"></i></button>
+                </div>
+                <img src="media/logo_png.png" alt>
+            </header>
+            <nav>
+                <button class="active" onclick="showTab('home')"
+                    id="home-btn"></button>
+                <button onclick="showTab('about-me')"
+                    id="about-me-btn"></button>
+                <button onclick="showTab('my-projects')"
+                    id="my-projects-btn"></button>
+            </nav>
+            <section>
+                <div style="display: flex;" class="home" id="home">
+                    <div class="image">
+                        <img src="media/assets/home-img.png" alt="profile">
+                    </div>
+                    <div class="content">
+                        <h1></h1>
+                        <h2></h2>
+                        <p>
+                            I build simple, fast, and clean web interfaces,
+                            focusing on small details and creating websites
+                            that are easy to use and clear from the first visit.
+                        </p>
+                    </div>
+                </div>
+
+                <div style="display: none;" class="about-me"
+                    id="about-me">
+                    <div class="image">
+                        <img src="media/assets/home-img (3).png" alt>
+                    </div>
+                    <div class="content">
+                        <h1></h1>
+                        <div>
+                        </div>
+                        <h1></h1>
+                        <div>
+
+                        </div>
+                        <h1></h1>
+                        <div>
+
+                        </div>
+                    </div>
+                </div>
+                <div style="display: none;" class="my-projects"
+                    id="my-projects">
+
+                </div>
+            </section>
+            <footer>
+                <p></p>
+            </footer>
+        </div>
+        <div class="theme-fade"></div>
+    </body>
+    <script src="index.js"></script>
+</html>
+<!-- <h1>جدول تفاعلي لطلاب الجامعه</h1>
+<p>منصة إلكترونية مخصصة لعرض جداول المحاضرات لطلاب كلية
+    الحاسبات والذكاء الاصطناعي بجامعة سوهاج حسب
+    السكشن</p> -->
