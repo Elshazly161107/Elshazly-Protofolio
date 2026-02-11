@@ -113,6 +113,13 @@ let projectsEN = [
     a: "https://elshazly161107.github.io/Elshazly-Protofolio/",
     aText: "visit website",
   },
+  {
+    imageBg: "media/projects/q-game.png",
+    h1: `" brain battle " game`,
+    p: "a competitive quiz game in Arabic between two teams where I act as the host, asking cultural and general knowledge questions, and each team races to answer and score points to win",
+    a: "https://elshazly161107.github.io/Brain-Battle-Game/",
+    aText: "visit website",
+  },
 ];
 
 let projectsAR = [
@@ -128,6 +135,13 @@ let projectsAR = [
     h1: `موقع شخصي "بروتوفوليو"`,
     p: "بورتفوليو شخصي أستعرض فيه مهاراتي وأعمالي في تطوير الويب، مع تركيز على التصميم البسيط والكود النظيف",
     a: "https://elshazly161107.github.io/Elshazly-Protofolio/",
+    aText: "زر الموقع",
+  },
+  {
+    imageBg: "media/projects/q-game.png",
+    h1: `لعبة " معركة العقول "`,
+    p: "لعبة تنافسية باللغة العرية بين فريقين، فيها الحكم يطرح أسئلة ثقافية، وكل فريق يحاول يجاوب أسرع ويجمع أكبر عدد من النقاط للفوز",
+    a: "https://elshazly161107.github.io/Brain-Battle-Game/",
     aText: "زر الموقع",
   },
 ];
