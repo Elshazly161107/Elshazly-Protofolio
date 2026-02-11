@@ -38,48 +38,48 @@ let aboutMeDiv = document.querySelectorAll(".about-me .content>div");
 let aboutMeContentEN = [
   {
     h1: "full name",
-    div: ["abdullah wael mohamed elshazly"],
+    div: ["abdullah wael mohamed elshazly 100"],
   },
   {
     h1: "languages",
-    div: ["english", "arabic"],
+    div: ["english 50", "arabic 100"],
   },
   {
     h1: "education",
     div: [
-      "student in the Faculty of Computers and Artificial Intelligence in Sohag",
+      "student in the Faculty of Computers and Artificial Intelligence in Sohag 25",
     ],
   },
   {
     h1: "skills",
-    div: ["html", "css", "java script"],
+    div: ["html 100", "css 100", "java script 50"],
   },
   {
     h1: "programs i use",
-    div: ["vs code"],
+    div: ["vs code 100"],
   },
 ];
 
 let aboutMeContentAR = [
   {
     h1: "الاسم الكامل",
-    div: ["عبدالله وائل محمد الشاذلي"],
+    div: ["عبدالله وائل محمد الشاذلي 100"],
   },
   {
     h1: "اللغات",
-    div: ["العربية", "الإنجليزية"],
+    div: ["الإنجليزية 50", "العربية 100"],
   },
   {
     h1: "التعليم",
-    div: ["طالب في كلية الحاسبات والذكاء الاصطناعي بسوهاج"],
+    div: ["طالب في كلية الحاسبات والذكاء الاصطناعي بسوهاج 25"],
   },
   {
     h1: "المهارات",
-    div: ["html", "css", "java script"],
+    div: ["html 100", "css 100", "java script 50"],
   },
   {
     h1: "برامج أستخدمها",
-    div: ["vs code"],
+    div: ["vs code 100"],
   },
 ];
 
@@ -87,9 +87,31 @@ let currentAboutMe = aboutMeContentEN;
 
 for (let i = 0; i < currentAboutMe.length; i++) {
   aboutMeH1[i].textContent = currentAboutMe[i].h1;
+
   for (let o = 0; o < currentAboutMe[i].div.length; o++) {
     let span = document.createElement("span");
-    span.textContent = currentAboutMe[i].div[o];
+
+    let spanTextArr = currentAboutMe[i].div[o];
+    let parts = spanTextArr.split(" ");
+
+    let spanComplete;
+    let spanCompleteNum = parts[parts.length - 1];
+
+    if (spanCompleteNum === "100") {
+      spanComplete = "full";
+    } else if (spanCompleteNum === "75") {
+      spanComplete = "third-quarter";
+    } else if (spanCompleteNum === "50") {
+      spanComplete = "half";
+    } else if (spanCompleteNum === "25") {
+      spanComplete = "quarter";
+    }
+
+    let spanText = parts.slice(0, -1);
+
+    span.classList.add(spanComplete);
+    span.textContent = spanText.join(" ");
+
     aboutMeDiv[i].appendChild(span);
   }
 }
@@ -225,17 +247,43 @@ langBtn.addEventListener("click", function () {
   aboutMeH1.forEach((e) => (e.innerHTML = ""));
   aboutMeDiv.forEach((e) => (e.innerHTML = ""));
 
+  let aboutMe = document.querySelector(".about-me .content");
+
   if (htmlFile.classList.contains("en")) {
     currentAboutMe = aboutMeContentEN;
+    aboutMe.classList.remove("ar");
   } else {
+    aboutMe.classList.add("ar");
     currentAboutMe = aboutMeContentAR;
   }
 
   for (let i = 0; i < currentAboutMe.length; i++) {
     aboutMeH1[i].textContent = currentAboutMe[i].h1;
+
     for (let o = 0; o < currentAboutMe[i].div.length; o++) {
       let span = document.createElement("span");
-      span.textContent = currentAboutMe[i].div[o];
+
+      let spanTextArr = currentAboutMe[i].div[o];
+      let parts = spanTextArr.split(" ");
+
+      let spanComplete;
+      let spanCompleteNum = parts[parts.length - 1];
+
+      if (spanCompleteNum === "100") {
+        spanComplete = "full";
+      } else if (spanCompleteNum === "75") {
+        spanComplete = "third-quarter";
+      } else if (spanCompleteNum === "50") {
+        spanComplete = "half";
+      } else if (spanCompleteNum === "25") {
+        spanComplete = "quarter";
+      }
+
+      let spanText = parts.slice(0, -1);
+
+      span.classList.add(spanComplete);
+      span.textContent = spanText.join(" ");
+
       aboutMeDiv[i].appendChild(span);
     }
   }

@@ -40,7 +40,7 @@ button {
     --text-main: #e5e7eb;
     --text-muted: #94a3b8;
 
-    --text-muted-opa: #94a3b850;
+    --text-muted-opa: #94a3b899;
 
     --accent: #38bdf8;
     --accent-soft: #38bdf826;
@@ -337,6 +337,7 @@ section>div {
 .about-me .content h1 {
     color: var(--text-main);
     text-transform: capitalize;
+    font-size: 22px;
 }
 
 .about-me .content>div {
@@ -349,9 +350,9 @@ section>div {
 
 .about-me .content span {
     position: relative;
-    padding: 5px 10px;
+    padding: 10px;
     text-transform: capitalize;
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 800;
     background: var(--text-muted-opa);
     color: var(--bg-body);
@@ -359,10 +360,6 @@ section>div {
     flex-grow: 1;
     text-align: center;
     transition: var(--tranDur);
-}
-
-.about-me .content span:hover {
-    flex-grow: 2;
 }
 
 .about-me .content span::before {
@@ -376,7 +373,24 @@ section>div {
     transition: var(--tranDur);
 }
 
-.about-me .content div span:hover::before {
+.about-me .content.ar span::before {
+    left: auto;
+    right: 0;
+}
+
+.about-me .content div span.quarter:hover::before {
+    width: 25%;
+}
+
+.about-me .content div span.half:hover::before {
+    width: 50%;
+}
+
+.about-me .content div span.third-quarter:hover::before {
+    width: 75%;
+}
+
+.about-me .content div span.full:hover::before {
     width: 100%;
 }
 
