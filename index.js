@@ -137,7 +137,7 @@ let projectsEN = [
   },
   {
     imageBg: "media/projects/q-game.png",
-    h1: `" brain battle " game`,
+    h1: `"brain battle" game`,
     p: "a competitive quiz game in Arabic between two teams where I act as the host, asking cultural and general knowledge questions, and each team races to answer and score points to win",
     a: "https://elshazly161107.github.io/Brain-Battle-Game/",
     aText: "visit website",
@@ -161,7 +161,7 @@ let projectsAR = [
   },
   {
     imageBg: "media/projects/q-game.png",
-    h1: `لعبة " معركة العقول "`,
+    h1: `لعبة "معركة العقول"`,
     p: "لعبة تنافسية باللغة العرية بين فريقين، فيها الحكم يطرح أسئلة ثقافية، وكل فريق يحاول يجاوب أسرع ويجمع أكبر عدد من النقاط للفوز",
     a: "https://elshazly161107.github.io/Brain-Battle-Game/",
     aText: "زر الموقع",
@@ -176,7 +176,7 @@ for (let i = 0; i < currentprojects.length; i++) {
   project.innerHTML = `
   <div class="image" style="background-image: url(${currentprojects[i].imageBg})"></div>
   <h1>${currentprojects[i].h1}</h1>
-  <p>${currentprojects[i].p}</p>
+  <p title="${currentprojects[i].p}">${currentprojects[i].p}</p>
   <a
       href="${currentprojects[i].a}"
       target="_blank">${currentprojects[i].aText}</a>`;
@@ -304,7 +304,7 @@ langBtn.addEventListener("click", function () {
     project.innerHTML = `
   <div class="image" style="background-image: url(${currentprojects[i].imageBg})"></div>
   <h1>${currentprojects[i].h1}</h1>
-  <p>${currentprojects[i].p}</p>
+  <p title="${currentprojects[i].p}">${currentprojects[i].p}</p>
   <a
       href="${currentprojects[i].a}"
       target="_blank">${currentprojects[i].aText}</a>`;
