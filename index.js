@@ -142,6 +142,13 @@ let projectsEN = [
     a: "https://elshazly161107.github.io/Brain-Battle-Game/",
     aText: "visit website",
   },
+  {
+    imageBg: "media/projects/write-the-word-game.png",
+    h1: `"write the word" game`,
+    p: "The game is a simple and engaging educational word game that helps improve your English vocabulary by letting you choose a difficulty level and then challenging you to write or complete the correct words based on hints or questions to earn points.",
+    a: "https://elshazly161107.github.io/write-the-word/",
+    aText: "visit website",
+  },
 ];
 
 let projectsAR = [
@@ -164,6 +171,13 @@ let projectsAR = [
     h1: `لعبة "معركة العقول"`,
     p: "لعبة تنافسية باللغة العرية بين فريقين، فيها الحكم يطرح أسئلة ثقافية، وكل فريق يحاول يجاوب أسرع ويجمع أكبر عدد من النقاط للفوز",
     a: "https://elshazly161107.github.io/Brain-Battle-Game/",
+    aText: "زر الموقع",
+  },
+  {
+    imageBg: "media/projects/write-the-word-game.png",
+    h1: `لعبة "اكتب الكلمة"`,
+    p: "اللعبة هي لعبة تعليمية بسيطة وممتعة تساعدك على تحسين مفرداتك في اللغة الإنجليزية، حيث تختار مستوى الصعوبة ثم تحاول كتابة الكلمة الصحيحة أو إكمالها بناءً على السؤال أو التلميح من أجل جمع النقاط",
+    a: "https://elshazly161107.github.io/write-the-word/",
     aText: "زر الموقع",
   },
 ];
