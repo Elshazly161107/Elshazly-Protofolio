@@ -32,6 +32,14 @@ button {
     cursor: pointer;
 }
 
+hr {
+    border: none;
+    height: 1px;
+    margin: 10px 0;
+    width: 100%;
+    background: var(--text-muted);
+}
+
 :root {
     --bg-body: #0f172a;
     --bg-app: #1e293b;
@@ -284,6 +292,8 @@ section>div {
     color: var(--text-main);
     line-height: 1.5;
     text-transform: capitalize;
+    max-height: 300px;
+    overflow: auto;
 }
 
 .about-me {
@@ -437,6 +447,7 @@ section>div {
 
 .my-projects .project p {
     font-size: 12px;
+    height: 40px;
     font-weight: 500;
     color: var(--text-muted);
     padding: 5px;

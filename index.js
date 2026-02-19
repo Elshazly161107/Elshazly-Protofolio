@@ -26,9 +26,18 @@ let homeH1 = document.querySelector("section .home .content h1");
 let homeH2 = document.querySelector("section .home .content h2");
 let homeP = document.querySelector("section .home .content p");
 homeH1.textContent = "abdullah wael";
-homeH2.textContent = "front-end developer";
-homeP.textContent =
-  "I build simple, fast, and clean web interfaces, focusing on small details and creating websites that are easy to use and clear from the first visit";
+homeH2.textContent = "front-end developer & Multimedia Specialist";
+homeP.innerHTML = `I design and build simple, fast, and clean web interfaces,
+with a strong focus on detail and user experience.
+<hr>
+My goal is to deliver websites that are clear, intuitive,
+and impactful from the very first visit.
+<hr>
+I am also proficient in Microsoft Office applications,
+particularly Word and PowerPoint, for creating professional documents and presentations.
+<hr>
+I provide complete technical solutions for digital projects.
+Feel free to get in touch.`;
 
 //
 
@@ -51,12 +60,23 @@ let aboutMeContentEN = [
     ],
   },
   {
-    h1: "skills",
+    h1: "social skills",
+    div: [
+      "Public speaking skills 100",
+      "Teamwork 100",
+      "Quick to learn and highly adaptable 100",
+      "Strong attention to detail 100",
+      "Ability to manage priorities 100",
+      "Effective communication 100",
+    ],
+  },
+  {
+    h1: "programming skills",
     div: ["html 100", "css 100", "java script 50"],
   },
   {
     h1: "programs i use",
-    div: ["vs code 100"],
+    div: ["vs code 100", "microsoft Word 100", "microsoft PowerPoint 100"],
   },
 ];
 
@@ -74,12 +94,23 @@ let aboutMeContentAR = [
     div: ["طالب في كلية الحاسبات والذكاء الاصطناعي بسوهاج 25"],
   },
   {
-    h1: "المهارات",
+    h1: "المهارات الاجتماعية",
+    div: [
+      "الإلقاء والخطابة 100",
+      "العمل الجماعي 100",
+      "سرعة التعلم والتكيف 100",
+      "الدقة والانتباه للتفاصيل 100",
+      "إدارة الأولويات 100",
+      "مهارات التواصل الفعّال 100",
+    ],
+  },
+  {
+    h1: "المهارات البرمجية",
     div: ["html 100", "css 100", "java script 50"],
   },
   {
     h1: "برامج أستخدمها",
-    div: ["vs code 100"],
+    div: ["vs code 100", "microsoft Word 100", "microsoft PowerPoint 100"],
   },
 ];
 
@@ -157,28 +188,28 @@ let projectsAR = [
     h1: "جدول تفاعلي لطلاب الجامعه",
     p: "منصة إلكترونية مخصصة لعرض جداول المحاضرات لطلاب كلية الحاسبات والذكاء الاصطناعي بجامعة سوهاج حسب السكشن",
     a: "https://elshazly161107.github.io/college-table/",
-    aText: "زر الموقع",
+    aText: "زُر الموقع",
   },
   {
     imageBg: "media/projects/protofolio.png",
     h1: `موقع شخصي "بروتوفوليو"`,
     p: "بورتفوليو شخصي أستعرض فيه مهاراتي وأعمالي في تطوير الويب، مع تركيز على التصميم البسيط والكود النظيف",
     a: "https://elshazly161107.github.io/Elshazly-Protofolio/",
-    aText: "زر الموقع",
+    aText: "زُر الموقع",
   },
   {
     imageBg: "media/projects/q-game.png",
     h1: `لعبة "معركة العقول"`,
     p: "لعبة تنافسية باللغة العرية بين فريقين، فيها الحكم يطرح أسئلة ثقافية، وكل فريق يحاول يجاوب أسرع ويجمع أكبر عدد من النقاط للفوز",
     a: "https://elshazly161107.github.io/Brain-Battle-Game/",
-    aText: "زر الموقع",
+    aText: "زُر الموقع",
   },
   {
     imageBg: "media/projects/write-the-word-game.png",
     h1: `لعبة "اكتب الكلمة"`,
     p: "اللعبة هي لعبة تعليمية بسيطة وممتعة تساعدك على تحسين مفرداتك في اللغة الإنجليزية، حيث تختار مستوى الصعوبة ثم تحاول كتابة الكلمة الصحيحة أو إكمالها بناءً على السؤال أو التلميح من أجل جمع النقاط",
     a: "https://elshazly161107.github.io/write-the-word/",
-    aText: "زر الموقع",
+    aText: "زُر الموقع",
   },
 ];
 
@@ -242,18 +273,37 @@ langBtn.addEventListener("click", function () {
   // home
 
   homeH1.textContent = "";
+  homeH2.textContent = "";
   homeP.textContent = "";
 
   if (htmlFile.classList.contains("en")) {
     homeH1.textContent = "abdullah wael";
-    homeP.textContent =
-      "I build simple, fast, and clean web interfaces, focusing on small details and creating websites that are easy to use and clear from the first visit";
+    homeH2.textContent = "front-end developer & Multimedia Specialist";
+    homeP.innerHTML = `I design and build simple, fast, and clean web interfaces,
+    with a strong focus on detail and user experience.
+<hr>
+My goal is to deliver websites that are clear, intuitive,
+and impactful from the very first visit.
+<hr>
+I am also proficient in Microsoft Office applications,
+particularly Word and PowerPoint, for creating professional documents and presentations.
+<hr>
+I provide complete technical solutions for digital projects.
+Feel free to get in touch.`;
   } else {
     homeH1.textContent = "عبدالله وائل";
-    homeP.textContent = `
-      أقوم ببناء واجهات ويب بسيطة، سريعة، ونظيفة،
-      أحب التفاصيل الصغيرة، وأهتم بأن يكون الموقع
-      سهل الاستخدام وواضح من أول زيارة`;
+    homeH2.textContent = "مطور واجهات المستخدم و مختص محتوى رقمي";
+    homeP.innerHTML = `أقوم بتصميم وبناء واجهات ويب بسيطة، سريعة، ونظيفة،
+مع اهتمام دقيق بالتفاصيل وتجربة المستخدم.
+<hr>
+أحرص على تقديم مواقع واضحة، سهلة الاستخدام،
+وتترك انطباعًا قويًا من أول زيارة.
+<hr>
+كما أجيد استخدام برامج Microsoft Office،
+وخاصة Word و PowerPoint في إعداد المستندات والعروض التقديمية باحترافية.
+<hr>
+أقدّم حلولًا تقنية متكاملة للمشاريع الرقمية.
+يسعدني تواصلك.`;
   }
 
   // about me
