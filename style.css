@@ -296,6 +296,18 @@ section>div {
     overflow: auto;
 }
 
+@media (max-width: 780px) {
+    .home .content p {
+        max-height: 115px;
+    }
+}
+
+@media (max-height: 960px) and (max-width: 450px) {
+    .home .content p {
+        max-height: 200px;
+    }
+}
+
 .about-me {
     display: flex;
     align-items: center;
