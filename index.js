@@ -180,13 +180,13 @@ let projectsEN = [
     a: "https://elshazly161107.github.io/write-the-word/",
     aText: "visit website",
   },
-  {
-    imageBg: "media/projects/rgeeb.png",
-    h1: `corporate website for "rgeeb combany"`,
-    p: "واجهة رقمية متطورة An advanced digital interface for the RGEEB system, featuring a highly responsive design and a seamless user experience, dedicated to showcasing technical integration services between surveillance cameras and intelligent data analysis systems",
-    a: "https://elshazly161107.github.io/rgeeb.com/",
-    aText: "visit website",
-  },
+  // {
+  //   imageBg: "media/projects/rgeeb.png",
+  //   h1: `corporate website for "rgeeb combany"`,
+  //   p: "واجهة رقمية متطورة An advanced digital interface for the RGEEB system, featuring a highly responsive design and a seamless user experience, dedicated to showcasing technical integration services between surveillance cameras and intelligent data analysis systems",
+  //   a: "https://elshazly161107.github.io/rgeeb.com/",
+  //   aText: "visit website",
+  // },
 ];
 
 let projectsAR = [
@@ -218,13 +218,13 @@ let projectsAR = [
     a: "https://elshazly161107.github.io/write-the-word/",
     aText: "زُر الموقع",
   },
-  {
-    imageBg: "media/projects/rgeeb.png",
-    h1: `موقع تعريفي لـ"شركة رقيب"`,
-    p: "واجهة رقمية متطورة لنظام رقيب، تتميز بتصميم استجابة عالي وتجربة مستخدم سلسة، مخصصة لعرض خدمات الربط التقني بين كاميرات المراقبة وأنظمة تحليل البيانات الذكية",
-    a: "https://elshazly161107.github.io/rgeeb.com/",
-    aText: "زُر الموقع",
-  },
+  // {
+  //   imageBg: "media/projects/rgeeb.png",
+  //   h1: `موقع تعريفي لـ"شركة رقيب"`,
+  //   p: "واجهة رقمية متطورة لنظام رقيب، تتميز بتصميم استجابة عالي وتجربة مستخدم سلسة، مخصصة لعرض خدمات الربط التقني بين كاميرات المراقبة وأنظمة تحليل البيانات الذكية",
+  //   a: "https://elshazly161107.github.io/rgeeb.com/",
+  //   aText: "زُر الموقع",
+  // },
 ];
 
 let currentprojects = projectsEN;
