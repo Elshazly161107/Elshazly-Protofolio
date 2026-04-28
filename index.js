@@ -72,7 +72,7 @@ let aboutMeContentEN = [
   },
   {
     h1: "programming skills",
-    div: ["html 100", "css 100", "java script 50"],
+    div: ["html 100", "css 100", "java script 50", "git & github 25"],
   },
   {
     h1: "programs i use",
@@ -106,7 +106,7 @@ let aboutMeContentAR = [
   },
   {
     h1: "المهارات البرمجية",
-    div: ["html 100", "css 100", "java script 50"],
+    div: ["html 100", "css 100", "java script 50", "git & github 25"],
   },
   {
     h1: "برامج أستخدمها",
